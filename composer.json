@@ -1,0 +1,46 @@
+{
+    "name": "laket/laket-config",
+    "description": "laket-admin 系统通用配置",
+    "keywords": [
+        "laket",
+        "config",
+        "admin",
+        "laket-admin"
+    ],
+    "homepage": "https://github.com/deatil/laket-config",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "deatil",
+            "email": "deatil@github.com",
+            "homepage": "https://github.com/deatil",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "laket/laket-admin": ">=1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laket\\Admin\\Config\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "laket" : {
+        "title": "系统通用配置",
+        "version": "1.0.0",
+        "adaptation": ">=1.5",
+        "sort": 1000
+    },
+    "extra": {
+        "think":{
+            "services":[
+                "Laket\\Admin\\Config\\Service"
+            ]
+        }
+    }
+}
