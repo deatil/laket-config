@@ -32,7 +32,7 @@
     },
     "laket" : {
         "title": "系统通用配置",
-        "version": "1.0.0",
+        "version": "1.0.2",
         "adaptation": ">=1.5",
         "sort": 1000
     },

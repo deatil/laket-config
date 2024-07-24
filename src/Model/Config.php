@@ -27,9 +27,6 @@ class Config extends Model
     {
         $id = md5(mt_rand(10000, 99999) . microtime());
         $model->setAttr('id', $id);
-        
-        $model->setAttr('add_time', time());
-        $model->setAttr('add_ip', request()->ip());
     }
 
 }
